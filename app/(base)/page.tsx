@@ -1,6 +1,7 @@
 import SideBar from '@/components/SideBar'
 import PromptBar from '@/components/PromptBar'
 import SamplePrompt from '@/components/SamplePrompt'
+import Settings from '@/components/Settings'
 
 
 export default function IndexPage() {
@@ -18,12 +19,13 @@ export default function IndexPage() {
             your code snippets with a view of how those components
             could look like.
           </p>
-          <div className='flex items-center w-full mt-4'>
+          {/* <div className='flex items-center w-full mt-4'>
             <SamplePrompt />
-          </div>
+          </div> */}
         </div>
         <PromptBar/>
       </div>
+      <Settings/>
     </main>
   )
 }

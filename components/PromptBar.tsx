@@ -1,8 +1,40 @@
+'use client'
+
+import { useState } from "react"
+
+
 export default function PromptBar() {
+    const [input, setInput] = useState('');
+
+    function getReactComponent() {
+
+    }
+    
+    function getVueComponent() {
+        
+    }
+
+    // const inputField = document.querySelector('.prompt-bar')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        // const prompt = formData.get("prompt")
+        // alert(`You searched for '${prompt}'`)
+
+        // make the fetch request
+    }
+
     return (
-        <div className="px-5 py-3 w-full sm:w-[60%] flex items-center justify-between gap-4 bg-[#F2F2FA] shadow-lg rounded-xl">
-            <input className="bg-[#F2F2FA] w-full focus:outline-none" type="text" placeholder="Enter prompt here"/>
-            <div className="flex items-center justify-center p-1 bg-[#EED8FF] rounded-full cursor-pointer">
+        <form onSubmit={handleSubmit} className="px-5 py-3 w-full sm:w-[60%] flex items-center justify-between gap-4 bg-[#F2F2FA] shadow-lg rounded-xl">
+            <input 
+                required
+                name="prompt"
+                type="text" 
+                placeholder="Enter prompt here"
+                className="bg-[#F2F2FA] w-full focus:outline-none prompt-bar" 
+            />
+            <button className="flex items-center justify-center p-1 bg-[#EED8FF] rounded-full cursor-pointer">
                 <svg width="22" height="22" viewBox="0 0 30 30" fill="none">
                     <g id="vuesax-linear-send-2 1" clipPath="url(#clip0_5_17)">
                     <g id="vuesax/linear/send-2">
@@ -18,7 +50,7 @@ export default function PromptBar() {
                     </clipPath>
                     </defs>
                 </svg>
-            </div>
-        </div>
+            </button>
+        </form>
     )
 }
