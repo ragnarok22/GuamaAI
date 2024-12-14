@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^0.0.37",
-    "ai": "^3.2.32",
+    "@ai-sdk/openai": "^1.0.8",
+    "ai": "^3.4.33",
     "gsap": "^3.12.5",
     "next": "14.2.10",
     "react": "^18",
